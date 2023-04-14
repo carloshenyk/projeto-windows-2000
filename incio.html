@@ -25,19 +25,23 @@
         </section>
    </div>
     <section class="areaDeTrabalho"></section>
+        <section class="areaDeTrabalho__volume">
+            <p class="rangeValor"></p>
+            <input type="range" min="0" max="100" value="50" class="areaDeTrabalho__volume--controle">
+        </section>
         <section class="barraDeTarefas">
             <button class="barraDeTarefas__menuInicia" onclick="toggleDiv()">Start</button>
             <section class="barraDeTarefas__menurapido">
                 <ul>
                     <li>T</li>
-                    <li>I</li>
+                    <li><img src="assets/img/Internet_Explorer_icon.svg" alt="Internet Explore" onclick="abrirNavegador()"></li>
                     <li>E</li>
                 </ul>
             </section>
 
             <section class="barraDeTarefas__relogioESom">
                 <ul>
-                    <li><ion-icon name="volume-high"></ion-icon></li>
+                    <li><ion-icon name="volume-high" onclick="controleSom()"></ion-icon></li>
                     <li id="relogio">R</li>
                 </ul>
             </section>

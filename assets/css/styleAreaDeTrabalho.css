@@ -13,6 +13,35 @@ body{
     background-color: #d6d3ce;
     align-items: center;
 }
+/* VOLUME DO SOM */
+.areaDeTrabalho__volume{
+    bottom: 4vh;
+    right: 80px;
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    background: #d6d3ce;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaDeTrabalho__volume .rangeValor{
+    font-size: 12px;
+    color: #000;
+}
+
+.areaDeTrabalho__volume--controle{
+    transform: rotate(-90deg);
+    height: 3px;
+}
+.areaDeTrabalho__volume--controle::-webkit-slider-runnable-track{
+    background: #b4b2ae;
+    height: 3px;
+}
+
+
+/************************/
 
 .barraDeTarefas__menuInicia{
     font-size: 14px;
@@ -28,6 +57,9 @@ body{
     color: #000;
 }
 
+.barraDeTarefas__menurapido ul li img{
+    width: 20px;
+}
 .barraDeTarefas__relogioESom ul{
     display: flex;
     position: absolute;
