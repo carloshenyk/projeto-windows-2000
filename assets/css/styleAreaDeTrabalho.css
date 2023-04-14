@@ -35,10 +35,15 @@ body{
     right: 10px;
     width: 100px;
     border: 1px solid #808080;
-    padding: 8px 0;
+    padding: 5px 0;
+    box-shadow: 1px 1px 1px rgb(143, 143, 143) inset;
 }
 .barraDeTarefas__relogioESom li{
     color: #000;
+}
+.barraDeTarefas__relogioESom ion-icon{
+    color: #2b2800;
+    font-size: 20px;
 }
 .barraDeTarefas__relogioESom li:nth-child(1){
     margin-right: 20px;
@@ -49,26 +54,33 @@ body{
     bottom: 4vh;
     display:none;
     width: 300px;
-    height: 500px;
+    height: 400px;
     background-color: #ffffff;
 }
 .menuIniciar__faixa{
-    width: 50px;
+    width: 45px;
     height: 100%;
+    border: 3px solid #ffffff;
     background: linear-gradient(#00000b,#0001fa);
 }
 .menuIniciar__listaPrograma{
-    width: 250px;
+    width: calc(300px - 45px);
     height: 100%;
     color: #000;
 }
 .menuIniciar__listaPrograma ul li{
-
     width: 100%;
-    height: calc(500px / 8);
-
+    height: calc(400px / 8);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .menuIniciar__listaPrograma ul li:hover{
     background: #09246b;
     color: #ffffff;
+}
+.menuIniciar__listaPrograma ul li:nth-child(1){
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.178);
 }
