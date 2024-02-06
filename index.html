@@ -19,13 +19,14 @@
         </section>
         <section class="menuIniciar__listaPrograma">
             <ul>
-                <li><img src="assets/img/icons/w2k_wupdate_1.png">Windows Update</li>
-                <li><img src="assets/img/icons/w2k_program_group.png">Programs <ion-icon name="caret-forward-outline"></ion-icon></li>
-                <li><img src="assets/img/icons/w2k_documents.png"><a href="documentos.html" target="_blank" rel="noopener noreferrer">Documents</a> <ion-icon name="caret-forward-outline"></ion-icon></li>
-                <li><img src="assets/img/icons/w2k_find.png">Search <ion-icon name="caret-forward-outline"></ion-icon></li>
-                <li><img src="assets/img/icons/w2k-help.png">Help<ion-icon name="caret-forward-outline"></ion-icon></li>
-                <li><img src="assets/img/icons/w2k_hourglass.png">Run...</li>
-                <li><img src="assets/img/icons/w2k_shut_down.png" alt="desligar"> Shut Down</li>
+                <li><a href="" target="_blank"><img src="assets/img/icons/w2k_wupdate_1.png">Windows Update</a></li>
+                <li><a target="_blank"> <img src="assets/img/icons/w2k_program_group.png">Programs</a><ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><a href="documentos.html" target="_blank"><img src="assets/img/icons/w2k_documents.png">Documents</a><ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><a href="" target="_blank"><img src="assets/img/icons/w2k_find.png">Search</a><ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><a href="" target="_blank"><img src="assets/img/icons/w2k-help.png">Help</a><ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><a href="" target="_blank"><img src="assets/img/icons/w2k_hourglass.png">Run...</a></li>
+                <li class="li_vazio"></li>
+                <li class="Shut_down"><a href="#" target="_blank"><img src="assets/img/icons/w2k_shut_down.png" alt="desligar"> Shut Down</a></li>
             </ul>
         </section>
    </div>
@@ -35,10 +36,13 @@
             <input type="range" min="0" max="100" value="50" class="areaDeTrabalho__volume--controle">
         </section>
         <section class="barraDeTarefas">
-            <button class="barraDeTarefas__menuInicia" onclick="toggleDiv()">Start</button>
+            <span class="menuDocumentos"><img src="assets/img/icons/w2k_my_documents.png" alt="">My Documents</span>
+
+
+            <button class="barraDeTarefas__menuInicia" onclick="toggleDiv()"><img src="assets/img/icons/start.png" alt=""> Start</button>
             <section class="barraDeTarefas__menurapido">
                 <ul>
-                    <li>T</li>
+                    <li><img src="assets/img/icons/w2k_desktop.png" alt=""></li>
                     <li><img src="assets/img/Internet_Explorer_icon.svg" alt="Internet Explore" onclick="abrirNavegador()"></li>
                     <li>E</li>
                 </ul>
@@ -46,8 +50,8 @@
 
             <section class="barraDeTarefas__relogioESom">
                 <ul>
-                    <li><ion-icon name="volume-high" onclick="controleSom()"></ion-icon></li>
-                    <li id="relogio">R</li>
+                    <li class="volume"><img src="assets/img/icons/w2k_wmp_58.png" alt="" onclick="controleSom()"></li>
+                    <li id="relogio"></li>
                 </ul>
             </section>
         </section>

@@ -1,15 +1,16 @@
 body{
     background-color: #396da5;
     color: #ffffff;
+    overflow: hidden;
 }
 .areaDeTrabalho{
     width: 100%;
-    height: 96vh;
+    height: 95vh;
 }
 .barraDeTarefas{
     display: flex;
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     background-color: #d6d3ce;
     align-items: center;
 }
@@ -62,12 +63,13 @@ body{
 }
 .barraDeTarefas__relogioESom ul{
     display: flex;
+    align-items: center;
     position: absolute;
-    top: 96vh;
+    top: 95.1vh;
     right: 10px;
     width: 100px;
     border: 1px solid #808080;
-    padding: 5px 0;
+    padding: 7px 0;
     box-shadow: 1px 1px 1px rgb(143, 143, 143) inset;
 }
 .barraDeTarefas__relogioESom li{
@@ -86,7 +88,7 @@ body{
     bottom: 4vh;
     display:none;
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-color: #d6d3ce;
 }
 .menuIniciar__faixa{
@@ -102,7 +104,7 @@ body{
     display: flex;
     position: absolute;
     right: 42%;
-    top: 50%;
+    top: 65%;
     gap: 5px;
    }
 .menuIniciar__faixa___texto .texto1,.texto3{
@@ -116,6 +118,18 @@ body{
 .menuIniciar__faixa___texto .texto2{
   margin-top: 5px;
 }
+
+
+.barraDeTarefas__menuInicia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px .1px rgb(1, 1, 1) inset;
+}
+
+.barraDeTarefas__menuInicia img{
+    width: 1.7rem;
+}
 .menuIniciar__listaPrograma{
     width: calc(300px - 45px);
     height: 100%;
@@ -123,16 +137,25 @@ body{
 }
 .menuIniciar__listaPrograma ul li{
     width: 100%;
-    height: calc(400px / 8);
+    height: calc(500px / 8);
     font-size: 20px;
+    padding-left: .5rem;
+    gap: 1rem;
+    cursor: row-resize;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: alias;
+}
+.menuIniciar__listaPrograma ul li a{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 1.5rem;
-    gap: 1rem;
-    cursor: row-resize;
+    color: #000;
+    text-decoration: none;
+    gap: 10px;
+    cursor: alias;
 }
-
 .menuIniciar__listaPrograma ul li:hover{
     background: #09246b;
     color: #ffffff;
@@ -141,5 +164,30 @@ body{
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.178);
 }
 .menuIniciar__listaPrograma ul li img{
-    width: 35px;
+    width: 2.7rem;
+}
+.menuIniciar__listaPrograma ul li:nth-child(7){
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.178);
+}
+
+.li_vazio{
+    display: none;
+}
+
+/* volume */
+.volume img{
+    width: 1.5rem;
+}
+
+/*
+icones area de trabalho
+*/
+.menuDocumentos{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
 }

@@ -24,14 +24,15 @@
 
   //relogio
   setInterval(() =>{
-  const horaAtual = new Date();
-
-  var hora = horaAtual.getHours();
-  var minuto = horaAtual.getMinutes();
-
-  var horaformatada = hora + ":" + minuto;
-
-  document.getElementById('relogio').innerHTML = horaformatada;
+    const data =   document.getElementById('relogio')
+    const date = new Date();
+  
+    var formatter = Intl.DateTimeFormat("pt-BR", {
+      hour: "numeric",
+      minute: "numeric",
+    });
+  
+  data.innerHTML = formatter.format(date);
 },1000)
 
 // Abrir navegador
