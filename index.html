@@ -5,37 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/resetStyle.css">
-    <link rel="stylesheet" href="assets/css/styleLogin.css">
-    <title>Windows 2000 - Login</title>
+    <link rel="stylesheet" href="assets/css/styleAreaDeTrabalho.css">
+    <title>Windows 2000</title>
 </head>
 <body>
-    <section id="caixaLogin" class="caixaLogin">
-        <header id="titulo" class="caixaLogin__titulo">Log On to Windows</header>
-        <section id="banner" class="caixaLogin__banner">
-            <div class="caixaLogin__banner--imagen"></div>
+    <div id="menuIniciar" class="menuIniciar" >
+        <section class="menuIniciar__faixa">
+            <div class="menuIniciar__faixa___texto">
+                <p class="texto1">Windows</p>
+                <p class="texto2">2000</p>
+                <p class="texto3">Professional</p>
+            </div>
         </section>
-
-        <form id="formulario" class="caixaLogin__formulario" action="incio.html" method="post">
-
-            <section class="caixaLogin__formulario___inputs">
-                <section class="caixaLogin__formulario___inputs--labelEInput">
-                    <label for="" class="caixaLogin__formulario--labelUsuario" id="UsuarioLogin">Usuario: </label>
-                    <label for="" class="caixaLogin__formulario--inputSenha" id="SenhaLogin">Senha: </label>
-                </section>
-
-                <section class="caixaLogin__formulario___inputs--labelEInput">
-                    <input type="text" id="inputUsuarioLogin" class="for=" class="caixaLogin__formulario--inptUsuario" name="UsuarioLogin" required>
-                    <input type="password" id="inputUsuariSenha" class="for=" class="caixaLogin__formulario--inptSenha" name="SenhaLogin" required>
-                </section>
-            </section>
-          
-            <ul class="listaBotoesLogin">
-                <li><button onclick="logar()">OK</button></li>
-                <li><Button>Cancelar</Button></li>
-                <li><button>Opções >></button></li>
+        <section class="menuIniciar__listaPrograma">
+            <ul>
+                <li><img src="assets/img/icons/w2k_wupdate_1.png">Windows Update</li>
+                <li><img src="assets/img/icons/w2k_program_group.png">Programs <ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><img src="assets/img/icons/w2k_documents.png"><a href="documentos.html" target="_blank" rel="noopener noreferrer">Documents</a> <ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><img src="assets/img/icons/w2k_find.png">Search <ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><img src="assets/img/icons/w2k-help.png">Help<ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><img src="assets/img/icons/w2k_hourglass.png">Run...</li>
+                <li><img src="assets/img/icons/w2k_shut_down.png" alt="desligar"> Shut Down</li>
             </ul>
-        </form>
-    </section>
-    <script src="assets/script/script.js" defer></script>
+        </section>
+   </div>
+    <section class="areaDeTrabalho"></section>
+        <section class="areaDeTrabalho__volume">
+            <p class="rangeValor"></p>
+            <input type="range" min="0" max="100" value="50" class="areaDeTrabalho__volume--controle">
+        </section>
+        <section class="barraDeTarefas">
+            <button class="barraDeTarefas__menuInicia" onclick="toggleDiv()">Start</button>
+            <section class="barraDeTarefas__menurapido">
+                <ul>
+                    <li>T</li>
+                    <li><img src="assets/img/Internet_Explorer_icon.svg" alt="Internet Explore" onclick="abrirNavegador()"></li>
+                    <li>E</li>
+                </ul>
+            </section>
+
+            <section class="barraDeTarefas__relogioESom">
+                <ul>
+                    <li><ion-icon name="volume-high" onclick="controleSom()"></ion-icon></li>
+                    <li id="relogio">R</li>
+                </ul>
+            </section>
+        </section>
+   </section>     
 </body>
+<script src="assets/script/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
