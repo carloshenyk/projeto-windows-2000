@@ -1,0 +1,74 @@
+body{
+    background: #3b6ea5;
+    widows: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaLogin{
+    width: 500px;
+    height: 250px;
+    background: #d4d0c7;
+    border: 3px solid #d4d0c7;
+
+}
+
+.caixaLogin__titulo{
+    width: 100%;
+    height: 8%;
+    background: rgba(17, 45, 113, 1);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.caixaLogin__formulario{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.caixaLogin__banner{
+    width: 100%;
+    height: 43%;
+    background-image: linear-gradient(to right, #010080 , #a7caee, #010080);
+}
+.caixaLogin__banner--imagen{
+    width: 100%;
+    height: 90%;
+    background: url(/assets/img/logo.png) no-repeat center;
+    background-size: cover;
+}
+.caixaLogin__formulario___inputs{
+    display: flex;
+    gap: 10px;
+}
+.caixaLogin__formulario___inputs--labelEInput{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.caixaLogin__formulario___inputs--labelEInput input{
+    width: 20rem;
+    height: 1.5rem;
+    box-shadow: .5px .5px .5px  inset;
+}
+.listaBotoesLogin{
+    display: flex;
+    height: 40px;
+    gap: 10px;
+    justify-content: right;
+    align-items: end;
+    padding-right: 10px;
+}
+.listaBotoesLogin li button{
+    padding: 3px 10px;
+    background: #d4d0c7;
+    border: none;
+    box-shadow: 2px 2px;
+
+    font-size: 16px;
+}
+
+.listaBotoesLogin li button:active{
+    box-shadow: 1px 1px;
+}

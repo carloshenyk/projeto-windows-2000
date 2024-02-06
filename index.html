@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/resetStyle.css">
+    <link rel="stylesheet" href="assets/css/styleLogin.css">
+    <title>Windows 2000 - Login</title>
+</head>
+<body>
+    <section id="caixaLogin" class="caixaLogin">
+        <header id="titulo" class="caixaLogin__titulo">Log On to Windows</header>
+        <section id="banner" class="caixaLogin__banner">
+            <div class="caixaLogin__banner--imagen"></div>
+        </section>
+
+        <form id="formulario" class="caixaLogin__formulario" action="incio.html" method="post">
+
+            <section class="caixaLogin__formulario___inputs">
+                <section class="caixaLogin__formulario___inputs--labelEInput">
+                    <label for="" class="caixaLogin__formulario--labelUsuario" id="UsuarioLogin">Usuario: </label>
+                    <label for="" class="caixaLogin__formulario--inputSenha" id="SenhaLogin">Senha: </label>
+                </section>
+
+                <section class="caixaLogin__formulario___inputs--labelEInput">
+                    <input type="text" id="inputUsuarioLogin" class="for=" class="caixaLogin__formulario--inptUsuario" name="UsuarioLogin" required>
+                    <input type="password" id="inputUsuariSenha" class="for=" class="caixaLogin__formulario--inptSenha" name="SenhaLogin" required>
+                </section>
+            </section>
+          
+            <ul class="listaBotoesLogin">
+                <li><button onclick="logar()">OK</button></li>
+                <li><Button>Cancelar</Button></li>
+                <li><button>Opções >></button></li>
+            </ul>
+        </form>
+    </section>
+    <script src="assets/script/script.js" defer></script>
+</body>
+</html>
