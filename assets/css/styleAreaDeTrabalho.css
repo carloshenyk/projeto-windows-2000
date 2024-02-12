@@ -33,13 +33,25 @@ body{
 }
 
 .areaDeTrabalho__volume--controle{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #0b0b0b20;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
     transform: rotate(-90deg);
-    height: 3px;
-}
-.areaDeTrabalho__volume--controle::-webkit-slider-runnable-track{
-    background: #b4b2ae;
-    height: 3px;
-}
+  }
+  .areaDeTrabalho__volume--controle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 25px;
+    background: #2e2e2e;
+    cursor: pointer;
+  }
+
 
 
 /************************/

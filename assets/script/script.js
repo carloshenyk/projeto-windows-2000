@@ -40,6 +40,10 @@
 function abrirNavegador(){
   window.open("https://br.bing.com", "Nova Janela", "width=800,height=600");
 }
+//Abrir Documentos
+function abrirDocumentos(){
+  window.open("./documentos.html", "Nova Janela", "width=800,height=600");
+}
 
 // Volume
 

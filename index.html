@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="" target="_blank"><img src="assets/img/icons/w2k_wupdate_1.png">Windows Update</a></li>
                 <li><a target="_blank"> <img src="assets/img/icons/w2k_program_group.png">Programs</a><ion-icon name="caret-forward-outline"></ion-icon></li>
-                <li><a href="documentos.html" target="_blank"><img src="assets/img/icons/w2k_documents.png">Documents</a><ion-icon name="caret-forward-outline"></ion-icon></li>
+                <li><img src="assets/img/icons/w2k_documents.png" onclick="abrirDocumentos()">Documents<ion-icon name="caret-forward-outline"></ion-icon></li>
                 <li><a href="" target="_blank"><img src="assets/img/icons/w2k_find.png">Search</a><ion-icon name="caret-forward-outline"></ion-icon></li>
                 <li><a href="" target="_blank"><img src="assets/img/icons/w2k-help.png">Help</a><ion-icon name="caret-forward-outline"></ion-icon></li>
                 <li><a href="" target="_blank"><img src="assets/img/icons/w2k_hourglass.png">Run...</a></li>
@@ -30,15 +30,17 @@
             </ul>
         </section>
    </div>
-    <section class="areaDeTrabalho"></section>
+   <!--AREA DE TRABALHO-->
+    <section class="areaDeTrabalho">
+        <span class="menuDocumentos" ><img src="assets/img/icons/w2k_my_documents.png" alt="" onclick="abrirDocumentos()">My Documents</span>
+    </section>
         <section class="areaDeTrabalho__volume">
             <p class="rangeValor"></p>
             <input type="range" min="0" max="100" value="50" class="areaDeTrabalho__volume--controle">
         </section>
+    <!--BARRA DE TAREFAS-->
         <section class="barraDeTarefas">
-            <span class="menuDocumentos"><img src="assets/img/icons/w2k_my_documents.png" alt="">My Documents</span>
-
-
+           
             <button class="barraDeTarefas__menuInicia" onclick="toggleDiv()"><img src="assets/img/icons/start.png" alt=""> Start</button>
             <section class="barraDeTarefas__menurapido">
                 <ul>
