@@ -1,0 +1,46 @@
+.cabecalho{
+    width: 100%;
+    height: 2rem;
+    background: #CECECE;
+}
+.menuSuperior{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 1rem;
+}
+.menuSuperior__start{
+    width: 2.5rem;
+    position: absolute;
+    left: 97.7%;
+    background: #000000;
+    padding: 0 .5rem;
+}
+.menuSuperior__start img{
+    width:1.5rem;
+}
+
+.menuSuperior2{
+    display: flex;
+    background: #CECECE;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+.menuSuperior2__secoes{
+    display: flex;
+    gap: 1rem;
+}
+
+.menuEndereco{
+    width: 100%;
+    background: #CECECE;
+}
+.menuEndereco .menuEndereco__pesquisa{
+    width: 95%;
+}
+.menuEndereco button{
+    background: transparent;
+    border: none;
+    padding: 5px;
+}
